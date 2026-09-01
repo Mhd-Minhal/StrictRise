@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrictRise — Wake With Purpose</title>
+    <meta name="description" content="StrictRise is a customizable alarm and wake protocol app with challenges, custom sounds, and flexible alarm scheduling.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://strictrise.app/">
+    <meta property="og:title" content="StrictRise — Wake With Purpose">
+    <meta property="og:description" content="StrictRise is a customizable alarm and wake protocol app with challenges, custom sounds, and flexible alarm scheduling.">
+    <meta property="og:image" content="https://strictrise.app/assets/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://strictrise.app/">
+    <meta property="twitter:title" content="StrictRise — Wake With Purpose">
+    <meta property="twitter:description" content="StrictRise is a customizable alarm and wake protocol app with challenges, custom sounds, and flexible alarm scheduling.">
+    <meta property="twitter:image" content="https://strictrise.app/assets/og-image.png">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bgDark: '#07090e',
+                        bgSurface: '#121422',
+                        purplePrimary: '#a855f7',
+                        purpleLight: '#c084fc',
+                        textWhite: '#f8fafc',
+                        textMuted: '#94a3b8',
+                        glassBg: 'rgba(19, 23, 40, 0.45)',
+                        glassBorder: 'rgba(255, 255, 255, 0.18)',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #07090e;
+            color: #f8fafc;
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-card {
+            background: rgba(19, 23, 40, 0.45);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .hero-glow {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(168, 85, 247, 0.1) 0%, rgba(7, 9, 14, 0) 70%);
+            z-index: -1;
+        }
+        .scroll-mt-nav {
+            scroll-margin-top: 100px;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden selection:bg-purplePrimary selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center backdrop-blur-md bg-bgDark/60 border-b border-white/5">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-purplePrimary rounded-lg flex items-center justify-center font-black text-white italic shadow-lg shadow-purplePrimary/20">SR</div>
+            <span class="text-xl font-black tracking-tight">StrictRise</span>
+        </div>
+        <div class="hidden md:flex gap-8 text-sm font-medium text-textMuted">
+            <a href="#features" class="hover:text-purplePrimary transition">Features</a>
+            <a href="#how-it-works" class="hover:text-purplePrimary transition">How It Works</a>
+            <a href="#download" class="hover:text-purplePrimary transition">Download</a>
+            <a href="mailto:Muhammedminhalk83@gmail.com" class="hover:text-purplePrimary transition">Support</a>
+        </div>
+        <a href="#download" class="bg-purplePrimary text-white px-6 py-2 rounded-full text-sm font-bold hover:scale-105 transition active:scale-95 shadow-lg shadow-purplePrimary/20">Download</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex flex-col items-center justify-center px-6 pt-20 text-center overflow-hidden">
+        <div class="hero-glow -top-40 -left-40"></div>
+        <div class="hero-glow bottom-0 right-0"></div>
+
+        <h1 class="text-6xl md:text-8xl font-black mb-6 tracking-tight">
+            Wake With <span class="text-purplePrimary italic">Purpose.</span>
+        </h1>
+        <p class="text-lg md:text-xl text-textMuted max-w-2xl mb-12 leading-relaxed">
+            A customizable alarm and wake protocol app designed around your routine.
+            Stop hitting snooze and start your day with discipline.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+            <a href="/downloads/strictrise.apk" download class="bg-textWhite text-bgDark px-10 py-4 rounded-2xl font-bold flex items-center justify-center gap-2 hover:bg-opacity-90 transition shadow-xl">
+                <span>Download APK</span>
+                <span class="text-xs font-medium opacity-60">v1.0.0</span>
+            </a>
+            <button onclick="alert('Coming Soon to Play Store!')" class="glass-card px-10 py-4 flex items-center justify-center gap-3 border-glassBorder hover:bg-white/5 transition">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="h-6">
+            </button>
+        </div>
+
+        <div class="mt-20 w-full max-w-5xl glass-card p-2 md:p-4 rotate-1 border-purplePrimary/20 shadow-2xl">
+            <img src="https://via.placeholder.com/1200x800/121422/A855F7?text=StrictRise+App+Interface" alt="StrictRise App" class="rounded-xl w-full">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-32 px-6 max-w-7xl mx-auto scroll-mt-nav">
+        <div class="text-center mb-20">
+            <h2 class="text-4xl md:text-5xl font-black mb-4 italic tracking-tight">Master Your Morning.</h2>
+            <p class="text-textMuted text-lg">Uncompromising features to ensure you never miss a beat.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div class="glass-card p-10 hover:border-purplePrimary/40 transition-all duration-500 group cursor-default">
+                <div class="w-14 h-14 bg-purplePrimary/15 text-purplePrimary rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-3 transition-transform">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Smart Scheduling</h3>
+                <p class="text-textMuted leading-relaxed">Setup Once, Daily, or Custom weekday alarms that fit your specific life schedule.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="glass-card p-10 hover:border-purplePrimary/40 transition-all duration-500 group cursor-default">
+                <div class="w-14 h-14 bg-purplePrimary/15 text-purplePrimary rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-3 transition-transform">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Custom Ringtones</h3>
+                <p class="text-textMuted leading-relaxed">Choose from premium built-in sounds or import your own audio files.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="glass-card p-10 hover:border-purplePrimary/40 transition-all duration-500 group cursor-default">
+                <div class="w-14 h-14 bg-purplePrimary/15 text-purplePrimary rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-3 transition-transform">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Math Challenges</h3>
+                <p class="text-textMuted leading-relaxed">Engage your brain instantly with customizable math problems to silence the alarm.</p>
+            </div>
+            <!-- Feature 4 -->
+            <div class="glass-card p-10 hover:border-purplePrimary/40 transition-all duration-500 group cursor-default">
+                <div class="w-14 h-14 bg-purplePrimary/15 text-purplePrimary rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-3 transition-transform">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Shake to Dismiss</h3>
+                <p class="text-textMuted leading-relaxed">Wake up your body by shaking your device to meet the required count.</p>
+            </div>
+            <!-- Feature 5 -->
+            <div class="glass-card p-10 hover:border-purplePrimary/40 transition-all duration-500 group cursor-default">
+                <div class="w-14 h-14 bg-purplePrimary/15 text-purplePrimary rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-3 transition-transform">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Typing Focus</h3>
+                <p class="text-textMuted leading-relaxed">Type your custom mission statement or random phrases to demonstrate cognitive focus.</p>
+            </div>
+            <!-- Feature 6 -->
+            <div class="glass-card p-10 hover:border-purplePrimary/40 transition-all duration-500 group cursor-default">
+                <div class="w-14 h-14 bg-purplePrimary/15 text-purplePrimary rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 group-hover:rotate-3 transition-transform">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Live Countdown</h3>
+                <p class="text-textMuted leading-relaxed">Always know exactly how much time you have left with our precise next-alarm countdown.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Screenshots -->
+    <section class="py-32 bg-bgSurface/30 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 text-center mb-20">
+            <h2 class="text-4xl md:text-5xl font-black mb-4 tracking-tight italic">Liquid Glass Interface.</h2>
+            <p class="text-textMuted text-lg">A premium experience for a premium routine.</p>
+        </div>
+        <div class="flex gap-8 overflow-x-auto pb-12 px-6 snap-x hide-scrollbar">
+            <div class="snap-center shrink-0 w-72 md:w-80 glass-card p-2 border-white/5">
+                <img src="https://via.placeholder.com/600x1200/121422/A855F7?text=Home+Screen" alt="Home" class="rounded-2xl">
+            </div>
+            <div class="snap-center shrink-0 w-72 md:w-80 glass-card p-2 border-white/5">
+                <img src="https://via.placeholder.com/600x1200/121422/A855F7?text=Edit+Alarm" alt="Edit" class="rounded-2xl">
+            </div>
+            <div class="snap-center shrink-0 w-72 md:w-80 glass-card p-2 border-white/5">
+                <img src="https://via.placeholder.com/600x1200/121422/A855F7?text=Challenges" alt="Tasks" class="rounded-2xl">
+            </div>
+            <div class="snap-center shrink-0 w-72 md:w-80 glass-card p-2 border-white/5">
+                <img src="https://via.placeholder.com/600x1200/121422/A855F7?text=Analytics" alt="Metrics" class="rounded-2xl">
+            </div>
+            <div class="snap-center shrink-0 w-72 md:w-80 glass-card p-2 border-white/5">
+                <img src="https://via.placeholder.com/600x1200/121422/A855F7?text=Ringing+Screen" alt="Active" class="rounded-2xl">
+            </div>
+            <div class="snap-center shrink-0 w-72 md:w-80 glass-card p-2 border-white/5">
+                <img src="https://via.placeholder.com/600x1200/121422/A855F7?text=Math+Task" alt="Math" class="rounded-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-32 bg-bgSurface/50 scroll-mt-nav">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-black mb-24 italic tracking-tight underline underline-offset-[16px] decoration-purplePrimary/30">Three Steps to Discipline.</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+                <div class="relative">
+                    <div class="text-8xl font-black text-purplePrimary/10 absolute -top-16 left-1/2 -translate-x-1/2 italic">01</div>
+                    <h3 class="text-3xl font-bold mb-4 relative z-10">Set Your Alarm</h3>
+                    <p class="text-textMuted relative z-10">Pick your time and select your repeat schedule with ease.</p>
+                </div>
+                <div class="relative">
+                    <div class="text-8xl font-black text-purplePrimary/10 absolute -top-16 left-1/2 -translate-x-1/2 italic">02</div>
+                    <h3 class="text-3xl font-bold mb-4 relative z-10">Choose Protocol</h3>
+                    <p class="text-textMuted relative z-10">Assign Math, Shake, or Typing challenges to your alarm.</p>
+                </div>
+                <div class="relative">
+                    <div class="text-8xl font-black text-purplePrimary/10 absolute -top-16 left-1/2 -translate-x-1/2 italic">03</div>
+                    <h3 class="text-3xl font-bold mb-4 relative z-10">Rise & Conquer</h3>
+                    <p class="text-textMuted relative z-10">Complete your challenge to silence the alarm and start your day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-40 px-6 text-center relative overflow-hidden scroll-mt-nav">
+        <div class="hero-glow top-0 left-1/2 -translate-x-1/2 opacity-30"></div>
+
+        <h2 class="text-5xl md:text-7xl font-black mb-8 tracking-tight italic">Ready to Rise?</h2>
+        <p class="text-xl text-textMuted mb-12">StrictRise for Android</p>
+
+        <div class="flex flex-col items-center gap-8">
+            <div class="flex flex-col items-center gap-4">
+                <a href="/downloads/strictrise.apk" download class="bg-purplePrimary text-white px-16 py-6 rounded-2xl font-black text-2xl hover:scale-105 transition shadow-2xl shadow-purplePrimary/30">
+                    Download APK
+                </a>
+                <div class="text-textMuted text-sm font-medium">
+                    Latest Version: 1.0.0 &bull; Android only
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center gap-4 opacity-50 cursor-not-allowed">
+                <button disabled class="glass-card px-10 py-4 flex items-center justify-center gap-3 border-glassBorder grayscale">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="h-8">
+                </button>
+                <span class="text-xs font-bold uppercase tracking-widest">Coming Soon</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="py-32 px-6 max-w-4xl mx-auto text-center border-t border-white/5">
+        <h2 class="text-3xl font-black mb-6 italic">Need Support?</h2>
+        <p class="text-textMuted text-lg mb-10">Our team is here to help you rise. Reach out for any questions or feedback.</p>
+        <a href="mailto:Muhammedminhalk83@gmail.com" class="text-purplePrimary font-black text-2xl hover:underline underline-offset-8 transition-all">
+            Muhammedminhalk83@gmail.com
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 px-6 border-t border-white/5 bg-bgDark">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+            <div class="flex flex-col items-center md:items-start gap-4">
+                <div class="flex items-center gap-2">
+                    <div class="w-7 h-7 bg-purplePrimary rounded flex items-center justify-center font-black text-[10px] text-white italic">SR</div>
+                    <span class="text-2xl font-black tracking-tight">StrictRise</span>
+                </div>
+                <p class="text-textMuted text-sm italic">© 2026 StrictRise. Wake With Purpose.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-10 text-xs font-bold text-textMuted tracking-[0.2em] uppercase">
+                <a href="privacy.html" class="hover:text-purplePrimary transition">Privacy Policy</a>
+                <a href="terms.html" class="hover:text-purplePrimary transition">Terms of Service</a>
+                <a href="mailto:Muhammedminhalk83@gmail.com" class="hover:text-purplePrimary transition">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</body>
+</html>
